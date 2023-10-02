@@ -1,0 +1,14 @@
+/* ------------------------ */
+/* FOOTER */
+/* ------------------------ */
+.footer {
+  width: 100%;
+  padding: 5rem 5rem;
+}
+
+.footer__author {
+  color: #333;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+}

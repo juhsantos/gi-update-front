@@ -1,0 +1,32 @@
+<div class="form-container" id="complete-form">
+  <h1 class="form-title">Incluir Dependentes</h1>
+  <form class="form">
+    <div class="form__group">
+      <label class="form__label" for="name">Nome do dependente</label>
+      <input class="form__input" type="text" id="name" autocomplete="name" required>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="phone">CPF do dependente</label>
+      <input class="form__input" type="text" placeholder="000.000.000-00" id="cpf" data-mask="cpf" required>
+      <p class="form__error">CPF inválido, tente novamente.</p>
+
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="tipo" id="tipo">Tipo de relacionamento</label>
+      <select class="form__input" type="option" id="tipo" autocomplete="selecione uma opção" required>
+        <option value="1">Filho(a)</option>
+        <option value="2">Cônjugue</option>
+      </select>
+    </div>
+    <div class="form__group">
+      <button class="btn btn--primary btn--save">Adicionar</button>
+    </div>
+
+
+    <div class="btns__container">
+      <button routerLink="/atualizacao-cadastral" class="btn btn--secondary btn--back">Voltar</button>
+      <button class="btn btn--primary btn--save">Finalizar</button>
+    </div>
+
+  </form>
+</div>

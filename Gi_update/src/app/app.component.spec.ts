@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'gi-update-front'`, () => {
+  it(`should have as title 'Gi_update'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('gi-update-front');
+    expect(app.title).toEqual('Gi_update');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('gi-update-front app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Gi_update app is running!');
   });
 });

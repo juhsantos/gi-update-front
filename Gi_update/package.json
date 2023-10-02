@@ -1,5 +1,5 @@
 {
-  "name": "gi-update-front",
+  "name": "gi-update",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

@@ -1,0 +1,51 @@
+<div class="form-container" id="complete-form">
+  <h1 class="form-title">Atualização Cadastral</h1>
+  <form class="form">
+    <div class="form__group">
+      <label class="form__label" for="name">Nome</label>
+      <input class="form__input" type="text" id="name" autocomplete="name" [value]="Dados.name" required>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="phone">Telefone</label>
+      <input class="form__input" type="text" id="phone" placeholder="(00) 00000-0000" [value]="Dados.phone" required>
+      <p class="form__error">CPF inválido, tente novamente.</p>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="cep">CEP</label>
+      <input class="form__input" type="text" id="cep" placeholder="00000-000" [value]="Dados.cep" required>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="state">Estado</label>
+      <input class="form__input" type="text" id="state" [value]="Dados.state" required>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="city">Cidade</label>
+      <input class="form__input" type="text" id="city" [value]="Dados.city" required>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="district">Bairro</label>
+      <input class="form__input" type="text" id="district" [value]="Dados.district" required>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="street">Logradouro</label>
+      <input class="form__input" type="text" id="street" autocomplete="street-street" [value]="Dados.name" required>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="houseNumber">Número</label>
+      <input class="form__input" type="text" id="houseNumber" [value]="Dados.houseNumber" required>
+    </div>
+    <div class="form__group">
+      <label class="form__label" for="additionalInfo">Complemento</label>
+      <input class="form__input" type="text" id="additionalInfo" [value]="Dados.additionalInfo">
+    </div>
+
+    <div class="btns__container">
+      <button routerLink="/main" class="btn btn--secondary btn--back">Voltar</button>
+      <button routerLink="/dependentes" class="btn btn--primary btn--save">Avançar</button>
+    </div>
+
+  </form>
+</div>
+
+
+

@@ -1,12 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "cli": {
-    "packageManager": "npm"
-  },
   "newProjectRoot": "projects",
   "projects": {
-    "gi-update-front": {
+    "Gi_update": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gi-update-front",
+            "outputPath": "dist/gi-update",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -63,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "gi-update-front:build:production"
+              "browserTarget": "Gi_update:build:production"
             },
             "development": {
-              "browserTarget": "gi-update-front:build:development"
+              "browserTarget": "Gi_update:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gi-update-front:build"
+            "browserTarget": "Gi_update:build"
           }
         },
         "test": {
@@ -97,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1ad57f23-55f4-4a2c-827d-034a9be96da3"
   }
 }
